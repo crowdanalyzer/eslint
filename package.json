@@ -1,0 +1,28 @@
+{
+  "name": "@crowdanalyzer/eslint",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "author": "CrowdAnalyzer <dev@crowdanalyzer.com>",
+  "description": "Crowd Analyzer eslint configuration",
+  "contributors": [
+    {
+      "name": "Bahaa Galal <bahaagalal>",
+      "email": "bahaa.galal@crowdanalyzer.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crowdanalyzer/eslint.git"
+  },
+  "engine": {
+    "node": ">=6.0.0",
+    "npm": ">=3.0.0"
+  },
+  "main": "./index",
+  "peerDependencies": {
+    "eslint": "^3.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.5.0"
+  }
+}
