@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-crowdanalyzer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "UNLICENSED",
   "author": "CrowdAnalyzer <dev@crowdanalyzer.com>",
   "description": "Crowd Analyzer eslint configuration",

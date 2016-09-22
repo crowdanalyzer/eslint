@@ -66,7 +66,7 @@ module.exports = {
         'object-curly-spacing': ['error', 'always'],
 
         // enforce variables to be declared either together or separately in functions
-        'one-var': ['error', 'always'],
+        'one-var': ['error', 'never'],
 
         // require or disallow padding within blocks
         'padded-blocks': ['error', {
