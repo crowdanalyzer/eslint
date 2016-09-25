@@ -26,7 +26,7 @@ module.exports = {
         // enforce minimum and maximum identifier lengths
         'id-length': ['error', {
             min: 2, max: Infinity,
-            properties: 'always', exceptions: ['_'],
+            properties: 'never', exceptions: ['_'],
         }],
 
         // enforce consistent indentation
