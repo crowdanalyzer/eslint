@@ -33,7 +33,15 @@ module.exports = {
         indent: ['error', 4, { SwitchCase: 1, MemberExpression: 1 }],
 
         // enforce consistent spacing before and after keywords
-        'keyword-spacing': ['error', { before: true, after: false }],
+        'keyword-spacing': ['error', {
+            before: true, after: false,
+            overrides: {
+                else: { after: true },
+                return: { after: true },
+                do: { after: true },
+                try: { after: true },
+            },
+        }],
 
         // enforce a maximum line length
         'max-len': ['error', 100, {
