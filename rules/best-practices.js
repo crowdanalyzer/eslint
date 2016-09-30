@@ -3,7 +3,7 @@
 module.exports = {
     rules: {
         // enforce dot notation whenever possible
-        'dot-notation': ['error', { allowKeywords: false }],
+        'dot-notation': ['error', { allowKeywords: true }],
 
         // require the use of === and !==
         eqeqeq: ['error', 'always', { null: 'always' }],
