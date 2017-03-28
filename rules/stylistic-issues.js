@@ -101,5 +101,11 @@ module.exports = {
 
         // require spacing around operators
         'space-infix-ops': ['error'],
+
+        'no-multiple-empty-lines': { "max": 1 },
+
+        'lines-around-directive': { before: "never", after: "always" },
+
+        'key-spacing': { beforeColon: false, afterColon: true, mode: 'strict' },
     },
 };
