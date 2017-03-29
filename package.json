@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-crowdanalyzer",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "license": "UNLICENSED",
   "author": "CrowdAnalyzer <dev@crowdanalyzer.com>",
   "description": "Crowd Analyzer eslint configuration",
@@ -13,6 +13,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/crowdanalyzer/eslint.git"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint .; exit 0;",
+    "docker": "docker build --no-cache -t eslint:$npm_package_version --build-arg NPM_TOKEN=$NPM_TOKEN . && docker run eslint:$npm_package_version"
   },
   "engine": {
     "node": ">=6.0.0",
