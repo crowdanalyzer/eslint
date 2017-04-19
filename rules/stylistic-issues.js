@@ -102,10 +102,14 @@ module.exports = {
         // require spacing around operators
         'space-infix-ops': ['error'],
 
-        'no-multiple-empty-lines': ['error', { max: 1 }],
+        // disallow multiple empty lines
+        'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1, maxBOF: 0 }],
 
+        // disallow newline before directives & require newline after directives
         'lines-around-directive': ['error', { before: 'never', after: 'always' }],
 
+        // disallow spaces between the key and the colon in object literals & 
+        // require one space between the colon and the value in object literals
         'key-spacing': ['error', { beforeColon: false, afterColon: true, mode: 'strict' }],
     },
 };
