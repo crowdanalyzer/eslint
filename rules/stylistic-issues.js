@@ -111,8 +111,5 @@ module.exports = {
         // disallow spaces between the key and the colon in object literals & 
         // require one space between the colon and the value in object literals
         'key-spacing': ['error', { beforeColon: false, afterColon: true, mode: 'strict' }],
-
-        // enforce yoda comparison to avoid assigning mistakes
-        yoda: ['error', 'never', { onlyEquality: true }],
     },
 };
