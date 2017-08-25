@@ -14,11 +14,11 @@ module.exports = {
         // require or disallow trailing commas
         'comma-dangle': ['error', 'always-multiline'],
 
+        // enforce consistent spacing before and after commas
+        'comma-spacing': ['error', { before: false, after: true }],
+
         // enforce consistent comma style
         'comma-style': ['error', 'last'],
-
-        // Enforces spacing around commas
-        'comma-spacing': ['error', { before: false, after: true }],
 
         // enforce at least one newline at the end of files
         'eol-last': ['error', 'unix'],
