@@ -14,6 +14,9 @@ module.exports = {
         // require or disallow trailing commas
         'comma-dangle': ['error', 'always-multiline'],
 
+        // enforce consistent spacing before and after commas
+        'comma-spacing': ['error', { before: false, after: true }],
+
         // enforce consistent comma style
         'comma-style': ['error', 'last'],
 
@@ -25,7 +28,7 @@ module.exports = {
 
         // enforce minimum and maximum identifier lengths
         'id-length': ['error', {
-            min: 2, max: Infinity,
+            min: 2,
             properties: 'never', exceptions: ['_'],
         }],
 
