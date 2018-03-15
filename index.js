@@ -10,7 +10,7 @@ module.exports = {
     ].map(require.resolve),
 
     parserOptions: {
-        ecmaVersion: 6,
+        ecmaVersion: 8,
         sourceType: 'module',
     },
 
