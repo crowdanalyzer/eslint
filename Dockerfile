@@ -5,4 +5,4 @@ ADD . /var/code/
 WORKDIR /var/code/
 RUN mv .npmrc-example .npmrc
 RUN npm install
-ENTRYPOINT ["npm", "run", "lint"]
+ENTRYPOINT ./startup.sh
