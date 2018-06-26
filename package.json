@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-crowdanalyzer",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "license": "UNLICENSED",
   "author": "CrowdAnalyzer <dev@crowdanalyzer.com>",
   "description": "Crowd Analyzer eslint configuration",
@@ -12,6 +12,10 @@
     {
       "name": "Mohamed Ashour <mohamedAshour>",
       "email": "mohamed.ashour@crowdanalyzer.com"
+    },
+    {
+      "name": "Mustafa Hussain <mustafah15>",
+      "email": "mustafa.hussain@crowdanalyzer.com"
     }
   ],
   "repository": {
@@ -28,9 +32,9 @@
   },
   "main": "./index",
   "peerDependencies": {
-    "eslint": ">= 3.5.0 < 5"
+    "eslint": ">= 3.5.0 < 6"
   },
   "devDependencies": {
-    "eslint": "^4.18.2"
+    "eslint": "^5.0.1"
   }
 }
