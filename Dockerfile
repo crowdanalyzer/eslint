@@ -3,6 +3,6 @@ ARG NPM_TOKEN
 ENV NPM_TOKEN $NPM_TOKEN
 WORKDIR /var/code/
 ADD . /var/code/
-RUN COPY .npmrc-example .npmrc
+COPY ./.npmrc-example ./.npmrc
 RUN npm install
 ENTRYPOINT ./startup.sh
