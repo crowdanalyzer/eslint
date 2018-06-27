@@ -1,9 +1,17 @@
 {
   "name": "eslint-config-crowdanalyzer",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "license": "UNLICENSED",
   "author": "CrowdAnalyzer <dev@crowdanalyzer.com>",
   "description": "Crowd Analyzer eslint configuration",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crowdanalyzer/eslint.git"
+  },
+  "engine": {
+    "node": ">=6.0.0",
+    "npm": ">=3.0.0"
+  },
   "contributors": [
     {
       "name": "Bahaa Galal <bahaagalal>",
@@ -12,25 +20,21 @@
     {
       "name": "Mohamed Ashour <mohamedAshour>",
       "email": "mohamed.ashour@crowdanalyzer.com"
+    },
+    {
+      "name": "Mustafa Hussain <mustafah15>",
+      "email": "mustafa.hussain@crowdanalyzer.com"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/crowdanalyzer/eslint.git"
-  },
+  "main": "./index",
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
-    "docker": "docker build --no-cache -t eslint:$npm_package_version --build-arg NPM_TOKEN=$NPM_TOKEN . && docker run eslint:$npm_package_version"
-  },
-  "engine": {
-    "node": ">=6.0.0",
-    "npm": ">=3.0.0"
-  },
-  "main": "./index",
-  "peerDependencies": {
-    "eslint": ">= 3.5.0 < 5"
+    "docker": "docker-compose build --no-cache && docker-compose run node"
   },
   "devDependencies": {
-    "eslint": "^4.18.2"
+    "eslint": "^5.0.1"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3.5.0 < 6"
   }
 }
