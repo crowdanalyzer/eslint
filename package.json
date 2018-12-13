@@ -33,12 +33,10 @@
   "main": "./index",
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
-    "docker": "docker-compose build --no-cache && docker-compose run node",
-    "depcheck": "./node_modules/.bin/npm-check --ignore npm-check"
+    "docker": "docker-compose build --no-cache && docker-compose run node"
   },
   "devDependencies": {
-    "eslint": "^5.0.1",
-    "npm-check": "^5.9.0"
+    "eslint": "^5.0.1"
   },
   "peerDependencies": {
     "eslint": ">= 3.5.0 < 6"
