@@ -9,8 +9,8 @@
     "url": "https://github.com/crowdanalyzer/eslint.git"
   },
   "engine": {
-    "node": ">=6.0.0",
-    "npm": ">=3.0.0"
+    "node": ">=10.14.0",
+    "npm": ">=6.4.1"
   },
   "contributors": [
     {
@@ -24,15 +24,21 @@
     {
       "name": "Mustafa Hussain <mustafah15>",
       "email": "mustafa.hussain@crowdanalyzer.com"
+    },
+    {
+      "name": "Bassem Ghoniem <BassemGhoniem>",
+      "email": "bassem.ghoiem@crowdanalyzer.com"
     }
   ],
   "main": "./index",
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
-    "docker": "docker-compose build --no-cache && docker-compose run node"
+    "docker": "docker-compose build --no-cache && docker-compose run node",
+    "depcheck": "./node_modules/.bin/npm-check --ignore npm-check"
   },
   "devDependencies": {
-    "eslint": "^5.0.1"
+    "eslint": "^5.0.1",
+    "npm-check": "^5.9.0"
   },
   "peerDependencies": {
     "eslint": ">= 3.5.0 < 6"

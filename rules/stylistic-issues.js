@@ -118,7 +118,7 @@ module.exports = {
         // leave empty line after every closing curly brace `}`
         'padding-line-between-statements': [
             'error',
-            { blankLine: "always", prev: 'block-like', next: '*' }
-        ]
+            { blankLine: 'always', prev: 'block-like', next: '*' },
+        ],
     },
 };
