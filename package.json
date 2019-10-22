@@ -24,6 +24,10 @@
     {
       "name": "Mustafa Hussain <mustafah15>",
       "email": "mustafa.hussain@crowdanalyzer.com"
+    },
+    {
+      "name": "Abdelrahman Elkady <abdelrahman-elkady>",
+      "email": "abdelrahman.elkady@crowdanalyzer.com"
     }
   ],
   "main": "./index",
