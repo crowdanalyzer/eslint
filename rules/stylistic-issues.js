@@ -37,12 +37,8 @@ module.exports = {
 
         // enforce consistent spacing before and after keywords
         'keyword-spacing': ['error', {
-            before: true, after: false,
             overrides: {
-                else: { after: true },
-                return: { after: true },
-                do: { after: true },
-                try: { after: true },
+                if: { after: false },
             },
         }],
 
@@ -111,8 +107,58 @@ module.exports = {
         // disallow newline before directives & require newline after directives
         'lines-around-directive': ['error', { before: 'never', after: 'always' }],
 
-        // disallow spaces between the key and the colon in object literals & 
+        // disallow spaces between the key and the colon in object literals &
         // require one space between the colon and the value in object literals
         'key-spacing': ['error', { beforeColon: false, afterColon: true, mode: 'strict' }],
+
+        // disallow multiple spaces other than indentation
+        'no-multi-spaces': 'error',
+
+        // have a consistent changes in files by disabling trailing spaces
+        'no-trailing-spaces': ['error', {
+            skipBlankLines: false,
+            ignoreComments: false,
+        }],
+
+        // prevent space before semi colons, enforce spaces after semi colons
+        // (except having the semi colon at the end of line)
+        'semi-spacing': ['error', { before: false, after: true }],
+
+        // prevent having semi-colons at the beginning of lines
+        'semi-style': ['error', 'last'],
+
+        // enforce consistent line breaks for arrays
+        'array-bracket-newline': ['error', 'consistent'],
+
+        // prevent spacing inside computed object props
+        'computed-property-spacing': ['error', 'never'],
+
+        // prevent spacing between function and parentheses on invocation
+        'func-call-spacing': ['error', 'never'],
+
+        // enforce a consistent line breaks on function args
+        'function-paren-newline': ['error', 'consistent'],
+
+        // enforce line breaks between class members
+        'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: false }],
+
+        // enforce new lines after blocks
+        'padding-line-between-statements': [
+            'error',
+            {
+                blankLine: 'always',
+                prev: ['block', 'block-like', 'multiline-block-like'],
+                next: '*',
+            },
+        ],
+
+        // prevents having an `if` as the **only** statement in an else block
+        'no-lonely-if': 'error',
+
+        // require a space in the beginning of all comments
+        'spaced-comment': ['error', 'always', { block: { balanced: true } }],
+
+        // require spacing after `case`'s colon in switch statements
+        'switch-colon-spacing': ['error', { after: true, before: false }],
     },
 };
