@@ -35,6 +35,6 @@
     "eslint": "^5.0.1"
   },
   "peerDependencies": {
-    "eslint": ">= 3.5.0 < 6"
+    "eslint": ">= 3.5.0 < 7"
   }
 }
