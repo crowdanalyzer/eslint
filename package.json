@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/crowdanalyzer/eslint.git"
   },
-  "engine": {
+  "engines": {
     "node": ">=6.0.0",
     "npm": ">=3.0.0"
   },
