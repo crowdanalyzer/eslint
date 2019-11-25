@@ -37,8 +37,15 @@ module.exports = {
 
         // enforce consistent spacing before and after keywords
         'keyword-spacing': ['error', {
+            before: true, after: false,
             overrides: {
-                if: { after: false },
+                let: { after: true },
+                const: { after: true },
+                case: { after: true },
+                else: { after: true },
+                return: { after: true },
+                do: { after: true },
+                try: { after: true },
             },
         }],
 
