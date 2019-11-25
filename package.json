@@ -32,13 +32,28 @@
   ],
   "main": "./index",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint .",
-    "docker": "docker-compose build --no-cache && docker-compose run node"
+    "docker-debug-image": "docker commit ${PWD##*/} ${PWD##*/}_debug && docker run -it --entrypoint sh ${PWD##*/}_debug",
+    "docker-shutdown": "docker-compose down --rmi local -v",
+    "docker": "docker-compose up -d --build && docker exec -it ${PWD##*/} bash",
+    "lint": "eslint ."
   },
   "devDependencies": {
-    "eslint": "^6.5.1"
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/git": "^7.0.16",
+    "eslint": "^6.5.1",
+    "semantic-release": "^15.13.24"
   },
   "peerDependencies": {
     "eslint": ">= 4.9.0 < 7"
+  },
+  "dependencies": {},
+  "crowdanalyzer": {
+    "template": {
+      "type": "library",
+      "v": "template-v2.3"
+    },
+    "sia": {
+      "v": "0.6.0"
+    }
   }
 }

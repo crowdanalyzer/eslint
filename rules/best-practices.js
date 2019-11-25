@@ -26,7 +26,8 @@ module.exports = {
         // disallow unnecessary escape characters
         'no-useless-escape': ['error'],
 
-        // Enforce that the functions should either always return a value or does not return any value
+        // Enforce that the functions should either always
+        // return a value or does not return any value
         'consistent-return': 'error',
 
         // enforces consistent newlines before or after dots
@@ -35,7 +36,8 @@ module.exports = {
         // disallow empty destructuring patterns
         'no-empty-pattern': 'error',
 
-        // disallow fallthrough behavior between switch cases if they are having at least one statement
+        // disallow fallthrough behavior between switch cases if
+        // they are having at least one statement
         'no-fallthrough': 'error',
 
         // disallow redundant `return await` statements
