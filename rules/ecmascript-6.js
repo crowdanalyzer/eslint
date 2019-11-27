@@ -37,5 +37,22 @@ module.exports = {
 
         // require or disallow spacing around embedded expressions of template strings
         'template-curly-spacing': ['error', 'never'],
+
+        // prevent having a computed key that have an expression already evaluated to a string
+        'no-useless-computed-key': 'error',
+
+        // prevent useless renaming in destructuring
+        'no-useless-rename': 'error',
+
+        // prefer the usage of rest operator instead of using `arguments` in functions
+        'prefer-rest-params': 'error',
+
+        // prefer spread operator instead of `fn.apply()`, this rule respects the cases
+        // when you need to change the context of `this`
+        'prefer-spread': 'error',
+
+        // prevent having spacing with spread operator
+        'rest-spread-spacing': ['error', 'never'],
+
     },
 };

@@ -1,0 +1,48 @@
+version: 2
+references:
+  workdir: &workdir
+    /var/code
+
+  attach_workdir: &attach_workdir
+    attach_workspace:
+      at: *workdir
+
+  images: &images
+    docker:
+      - image: node:12.4.0
+    working_directory: *workdir
+
+jobs:
+  checks:
+    <<: *images
+    steps:
+      - checkout
+      - run:
+          name: Installing dependencies
+          command: npm install
+      - run:
+          name: Running lint
+          command: npm run lint
+      - persist_to_workspace:
+          root: *workdir
+          paths:
+            - ./*
+  publish:
+    <<: *images
+    steps:
+      - *attach_workdir
+      - run: npx semantic-release
+
+workflows:
+  version: 2
+  test_and_publish:
+    jobs:
+      - checks:
+          context: npm
+      - publish:
+          context: semantic-release
+          requires:
+            - checks
+          filters:
+            branches:
+              only: master

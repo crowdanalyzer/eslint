@@ -31,5 +31,17 @@ module.exports = {
 
         // disallow negating the left operand of relational operators
         'no-unsafe-negation': ['error'],
+
+        // comparing something to itself is usually an error
+        'no-self-compare': 'error',
+
+        // detects a very likely to happen performance issues for awaiting inside loops
+        'no-await-in-loop': 'error',
+
+        // prevents empty slots in arrays
+        'no-sparse-arrays': 'error',
+
+        // prevents direct comparison with NaN
+        'use-isnan': 'error',
     },
 };
