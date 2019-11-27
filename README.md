@@ -4,7 +4,7 @@
         <img alt="CircleCI" src="https://circleci.com/gh/crowdanalyzer/eslint/tree/master.svg?style=shield&circle-token=ed9e66bbbc1d3e51712244ccd2c1904ee76d5c85">
     </a>
     <a href="https://dependabot.com">
-        <img alt="Dependabot" src="https://img.shields.io/badge/dependabot-config%20required-red">
+        <img alt="Dependabot" src="https://api.dependabot.com/badges/status?host=github&repo=crowdanalyzer/eslint&identifier=68735609">
     </a>
     <a href="https://github.com/semantic-release/semantic-release">
         <img alt="semantic release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
