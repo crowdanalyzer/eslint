@@ -43,5 +43,8 @@ module.exports = {
 
         // prevents direct comparison with NaN
         'use-isnan': 'error',
+
+        // require use of the second argument for parseInt()
+        radix: 'error',
     },
 };
