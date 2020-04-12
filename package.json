@@ -28,6 +28,10 @@
     {
       "name": "Abdelrahman Elkady <abdelrahman-elkady>",
       "email": "abdelrahman.elkady@crowdanalyzer.com"
+    },
+    {
+      "name": "Maha Zaid <MahaZaid>",
+      "email": "maha.raafat@crowdanalyzer.com"
     }
   ],
   "main": "./index",
