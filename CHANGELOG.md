@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/crowdanalyzer/eslint/compare/v2.0.0...v3.0.0) (2020-04-12)
+
+
+### Features
+
+* add no-console rule ([#32](https://github.com/crowdanalyzer/eslint/issues/32)) ([c0c90ff](https://github.com/crowdanalyzer/eslint/commit/c0c90ff168b2d196ed24d9096b041b6a8694a3cf))
+
+
+### BREAKING CHANGES
+
+* If your code used to have `console` statements, now eslint will hate it.
+
 # [2.0.0](https://github.com/crowdanalyzer/eslint/compare/v1.4.1...v2.0.0) (2019-11-27)
 
 
