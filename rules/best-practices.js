@@ -43,5 +43,7 @@ module.exports = {
         // disallow redundant `return await` statements
         'no-return-await': 'error',
 
+        // disallows calls to methods of the console object
+        'no-console': 'error',
     },
 };
