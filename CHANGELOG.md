@@ -1,3 +1,23 @@
+# [4.0.0](https://github.com/crowdanalyzer/eslint/compare/v3.0.0...v4.0.0) (2020-04-22)
+
+
+### Features
+
+* add new-parens rule ([#33](https://github.com/crowdanalyzer/eslint/issues/33)) ([5adee6a](https://github.com/crowdanalyzer/eslint/commit/5adee6a4c898560f1eed06b6d29692b11d7dd8e8))
+
+
+### BREAKING CHANGES
+
+* trying to invoke a constructor with `new` keyword without parentheses will now be reported as an error
+
+```js
+// bad
+const user = new User;
+
+// good
+const user = new User();
+```
+
 # [3.0.0](https://github.com/crowdanalyzer/eslint/compare/v2.0.0...v3.0.0) (2020-04-12)
 
 
