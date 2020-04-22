@@ -167,5 +167,8 @@ module.exports = {
 
         // require spacing after `case`'s colon in switch statements
         'switch-colon-spacing': ['error', { after: true, before: false }],
+
+        // require parentheses when invoking a constructor with no arguments with new
+        'new-parens': 'error',
     },
 };
