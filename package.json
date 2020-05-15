@@ -42,10 +42,10 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^3.0.4",
-    "@semantic-release/git": "^7.0.16",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "eslint": "^6.8.0",
-    "semantic-release": "^15.14.0"
+    "semantic-release": "^17.0.7"
   },
   "peerDependencies": {
     "eslint": ">= 4.9.0 < 7"
