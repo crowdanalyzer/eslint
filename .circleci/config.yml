@@ -9,7 +9,7 @@ references:
 
   images: &images
     docker:
-      - image: node:12.4.0
+      - image: node:19.0.0
     working_directory: *workdir
 
 jobs:
